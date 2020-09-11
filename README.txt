@@ -1,6 +1,6 @@
 # Tkinter CRUD Form
-***Requirements***
-Python 3.x 
+Requirements
+Python 3
 Tkinter 
-pymysql  (use : pip install pymysql) 
+pymysql
 MySQL
