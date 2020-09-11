@@ -12,16 +12,14 @@ class form(formDB):
         self.win.geometry('500x730')
         self.win.title("Interviewer's Form")
         self.win.resizable(0,0)
-        try:self.win.wm_iconbitmap("icon.ico")
-        except:pass
-
+        
         self.labels = ['id','Last Name *','First Name *','Gender','Email *','Role','Address 1 *','Address 2','City','Region Code','Phone Home *','Phone Work']
         self.forInsert()
 
     
     def forInsert(self):
         self.e = [0,0,0,0,0,0,0,0,0,0,0,0,0]
-        self.ulabel = Label(self.win,text="FORM",font=('calibri',20),fg='black').pack(side=TOP,anchor=N)
+        self.heading = Label(self.win,text="FORM",font=('calibri',20),fg='black').pack(side=TOP,anchor=N)
 
         for lbl in range(13):
                 lbl = Label(self.win,text=self.labels[lbl-1],font=('italic',10),fg='black').place(x=20,y=lbl*50)
